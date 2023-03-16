@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="958e5e23-02a2-4dcc-ba26-636886f32adb">
+    <property name="com.jaspersoft.studio.data.sql.tables" value="cmVwb3J0IEFTICw0NiwxMTEsNTFjOWNkZTItNzAwYS00OWNhLWFiOTMtMzc3YmY5MTc3Njk1Ow=="/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="Report Tomat"/>
+    <queryString language="SQL">
+        <![CDATA[SELECT id,
+	createdat,
+	komoditas,
+	total,
+	updatedat
+FROM report]]>
+    </queryString>
+    <field name="id" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="id"/>
+        <property name="com.jaspersoft.studio.field.label" value="id"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+    </field>
+    <field name="createdat" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="createdat"/>
+        <property name="com.jaspersoft.studio.field.label" value="createdat"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+    </field>
+    <field name="komoditas" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="komoditas"/>
+        <property name="com.jaspersoft.studio.field.label" value="komoditas"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+    </field>
+    <field name="total" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.name" value="total"/>
+        <property name="com.jaspersoft.studio.field.label" value="total"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+    </field>
+    <field name="updatedat" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="updatedat"/>
+        <property name="com.jaspersoft.studio.field.label" value="updatedat"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+    </field>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="82" splitType="Stretch">
+            <textField>
+                <reportElement x="20" y="40" width="100" height="30" uuid="fbf35f97-2753-49d3-890a-642ac225b09c"/>
+                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="120" y="40" width="100" height="30" uuid="853323c3-ce31-428e-a99a-3de29d1dfb2e"/>
+                <textFieldExpression><![CDATA[$F{createdat}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="220" y="40" width="100" height="30" uuid="c9571fc3-1dbd-420d-a921-e68b4026786c"/>
+                <textFieldExpression><![CDATA[$F{komoditas}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="320" y="40" width="100" height="30" uuid="fc135e8f-5128-486d-9103-5732bf56501f"/>
+                <textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="420" y="40" width="100" height="30" uuid="d6da7df6-a65f-4f86-8d68-0157bbca335f"/>
+                <textFieldExpression><![CDATA[$F{updatedat}]]></textFieldExpression>
+            </textField>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="35" splitType="Stretch"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="61" splitType="Stretch"/>
+    </columnHeader>
+    <detail>
+        <band height="125" splitType="Stretch"/>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="54" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>
