@@ -30,7 +30,7 @@ public class SchedulerService {
         reportService.updateReportScheduler();
         System.out.println(execution.getScheduledFireTime());
     }
-    @Scheduled(cron = "20 0 08 1 1-12 ?")
+    @Scheduled(cron = "0 5 1 1-12 ?")
     public void sendReport(){
         String email = "************@gmail.com";
         String subject = "Report Tomat";
